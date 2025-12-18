@@ -2,7 +2,7 @@
 ## API
 
 ### Create New User
-http://localhost:8080/user/login   ( POST )
+http://localhost:8080/user/create   ( POST )
 {
     "fullName": "Rahul Verma",
     "email": "rahul.verma@gmail.com",
