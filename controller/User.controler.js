@@ -168,7 +168,7 @@ app.get("/get-distance", isAuth, async (req, res) => {
     try {
 
         const { latitude, longitude } = req.query;
-        const findUserByID = await UserModel.findById(req.userId).select("-password")
+        const findUserByID = await UserModel.findById(req.userId)
 
         const distance = calculateDistance(
             Number(latitude),
